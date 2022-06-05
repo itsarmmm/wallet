@@ -1,0 +1,187 @@
+{% load static %}
+
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Crypto - ICO Crypto, Blockchain & Cryptocurrency Web Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="{% static 'main/assets/favicon.png' %}">
+        <!-- Place favicon.png in the root directory -->
+
+		<!-- ========================= CSS here ========================= -->
+		<link rel="stylesheet" href="{% static 'main/css/bootstrap-5.0.0-alpha-1.min.css' %}">
+        <link rel="stylesheet" href="{% static 'main/css/LineIcons.2.0.css' %}">
+		<link rel="stylesheet" href="{% static 'main/css/animate.css' %}">
+		<link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'main/css/util.css' %}">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- ========================= preloader start ========================= -->
+            <div class="preloader d-none">
+                <div class="loader">
+                    <div class="ytp-spinner">
+                        <div class="ytp-spinner-container">
+                            <div class="ytp-spinner-rotator">
+                                <div class="ytp-spinner-left">
+                                    <div class="ytp-spinner-circle"></div>
+                                </div>
+                                <div class="ytp-spinner-right">
+                                    <div class="ytp-spinner-circle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- preloader end -->
+
+        <!-- ========================= header start ========================= -->
+<!--        <header class="header navbar-area">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <nav class="navbar navbar-expand-lg">-->
+<!--                            <a class="navbar-brand" href="index.html">-->
+<!--                                <img src="{% static 'main/assets/logo.svg' %}" alt="Logo">-->
+<!--                            </a>-->
+<!--                            <button class="navbar-toggler" type="button" data-toggle="collapse"-->
+<!--                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"-->
+<!--                                aria-expanded="false" aria-label="Toggle navigation">-->
+<!--                                <span class="toggler-icon"></span>-->
+<!--                                <span class="toggler-icon"></span>-->
+<!--                                <span class="toggler-icon"></span>-->
+<!--                            </button>-->
+
+<!--                            <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">-->
+<!--                                <ul id="nav" class="navbar-nav ml-auto">-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll active" href="#home">Home</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll" href="#about">About</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll" href="#service">Service</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll" href="#roadmap">Roadmap</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll" href="#team">Team</a>-->
+<!--                                    </li>-->
+<!--                                    <li class="nav-item">-->
+<!--                                        <a class="page-scroll" href="#contact">Contact</a>-->
+<!--                                    </li>-->
+<!--                                </ul>-->
+<!--                            </div> &lt;!&ndash; navbar collapse &ndash;&gt;-->
+<!--                        </nav> &lt;!&ndash; navbar &ndash;&gt;-->
+<!--                    </div>-->
+<!--                </div> &lt;!&ndash; row &ndash;&gt;-->
+<!--            </div> &lt;!&ndash; container &ndash;&gt;-->
+
+<!--        </header>-->
+
+
+
+    {% block content %}{% endblock %}
+
+
+            <!-- ========================= footer start ========================= -->
+<!--        <footer class="footer pt-100 img-bg" style="background-image: url({% static 'main/assets/common-bg.jpg' %})">-->
+<!--            <div class="container">-->
+<!--                <div class="row">-->
+<!--                    <div class="col-xl-4 col-lg-4 col-md-6">-->
+<!--                        <div class="footer-widget mb-60 wow fadeInLeft" data-wow-delay=".2s">-->
+<!--                            <a href="index.html" class="logo mb-40"><img src="{% static 'main/assets/logo.svg' %}" alt=""></a>-->
+<!--                            <p class="mb-30">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed dianonumy eirmod tempor invidunt ut labore.</p>-->
+<!--                            <div class="footer-social-links">-->
+<!--                                <ul>-->
+<!--&lt;!&ndash;                                    <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="#"><i class="lni lni-twitter-filled"></i></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <li><a href="#"><i class="lni lni-instagram-original"></i></a></li>&ndash;&gt;-->
+<!--                                </ul>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-2 col-lg-2 col-md-6">-->
+<!--                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".4s">-->
+<!--&lt;!&ndash;                            <h4>Company</h4>&ndash;&gt;-->
+<!--                            <ul class="footer-links">-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Home</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">About</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Service</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Team</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Contact</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-3 col-lg-3 col-md-6">-->
+<!--                        <div class="footer-widget mb-60 wow fadeInUp" data-wow-delay=".6s">-->
+<!--&lt;!&ndash;                            <h4>Resource</h4>&ndash;&gt;-->
+<!--                            <ul class="footer-links">-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Documentation</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">IOS & Android Apps</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Privacy Policy</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Support Forum</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <a href="javascript:void(0)">Terms Conditions</a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-xl-3 col-lg-3 col-md-6">-->
+<!--                        <div class="footer-widget mb-60 wow fadeInRight" data-wow-delay=".8s">-->
+<!--&lt;!&ndash;                            <h4>Resource</h4>&ndash;&gt;-->
+<!--                            <ul>-->
+<!--&lt;!&ndash;                                <li class="mb-30">&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p>Company No: C5B345 <br>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        CSINE GROUP LTD.</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                <li>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    <p>Address: M-321 Volunt Ave, <br> Staten Islandm, NY 201526</p>&ndash;&gt;-->
+<!--&lt;!&ndash;                                </li>&ndash;&gt;-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </div>-->
+<!--        </footer>-->
+        <!-- ========================= footer end ========================= -->
+
+
+		<!-- ========================= JS here ========================= -->
+		<script src="{% static 'main/js/bootstrap.bundle-5.0.0.alpha-1-min.js' %}"></script>
+        <script src="{% static 'main/js/contact-form.js' %}"></script>
+        <script src="{% static 'main/js/wow.min.js' %}"></script>
+		<script src="{% static 'main/js/main.js' %}"></script>
+    </body>
+</html>
+

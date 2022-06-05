@@ -1,0 +1,61 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container rounded bg-white mt-5 mb-5">
+    {% if status == 1 %}
+        <div style="text-align: center" class="alert alert-success">Заявка успешно создана</div>
+    {% endif %}
+    <div class="row">
+        <div class="col-md-3 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                {% if day_part == 'morning' %}
+                <h2 class="font-weight-bold">Доброе утро, {{ user.first_name }}!</h2>
+                {% elif day_part == 'afternoon' %}
+                <h2 class="font-weight-bold">Добрый день, {{ user.first_name }}!</h2>
+                {% else %}
+                <h2 class="font-weight-bold">Добрый вечер, {{ user.first_name }}!</h2>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-5 border-right">
+            <div class="p-3 py-5">
+                <div style="" class="card card-3">
+                      <div style="font-size:18px;" class="card__icon"><i class="fas fa-bolt"></i> Баланс:</div>
+                      <h3 style="margin-top:6%;" class="card__title">{{ account.balance }}</h3>
+                        <br>
+                      <button data-target="#login" data-toggle="modal" class="btn btn-dark"><i class="fa-solid fa-arrow-up"></i> Отправить</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="p-3 py-5">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="login" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+      <div class="modal-body">
+        <button data-dismiss="modal" class="close">&times;</button>
+        <br><br>
+        <h5>Введите сумму и адрес отправления</h5>
+        <br>
+        <form method="post" action="">
+            {% csrf_token %}
+          <input step="0.01" max="{{ account.balance }}" type="number" name="amount" class="form-control" placeholder="Сумма"/>
+          <input required id="phone" type="text" name="address" class="form-control" placeholder="Адрес"/>
+            <br>
+          <button style="border: 1px solid black; border-radius: 10px;" class="btn login" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
